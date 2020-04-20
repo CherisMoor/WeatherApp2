@@ -79,6 +79,6 @@ $('#displayMoment').text(datetime);
 });
 });
 
-.catch(err => alert("Wrong zip code!"));
+//.catch(err => alert("Wrong zip code!"));
 //$(".icon").html("<img src='http://openweathermap.org/img/w/" + data.weather[0].icon + ".png' alt='Icon depicting current weather.'>");
 

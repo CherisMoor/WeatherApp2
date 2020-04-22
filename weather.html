@@ -16,16 +16,43 @@
   
   <h1 style="background-image: url('https://images.unsplash.com/photo-1531147646552-1eec68116469?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60') color:white; text-decoration: underline; font-weight: bolder; text-shadow: 4px 2px 4px white; font-family: monospace;padding-top: 15px; padding-bottom: 15px; text-align: center;">Cherish's Weather App</h1>
 
-    <div class="input" style="position: center;">
+    <span class="input" style="position: center;">
       <input type="number" placeholder="Enter the zipcode" id="userInput" class="userInput">
-      <input type="submit" value="Submit" class="submit">
-    </div>
+      <input style="padding: 15px 25px; font-size: 24px; text-align: center; cursor: pointer; outline: none; color: #fff; background-color: #4CAF50; border: none; border-radius: 15px; box-shadow: 0 9px #999;" type="submit" value="Submit" class="submit">
+      <style type="text/css">
+      	.submit:hover {background-color: #3e8e41}
+      	.userInput:hover {background-color: lightgreen; color:maroon; font-weight: bolder;}
+		.submit:active {background-color: #3e8e41; box-shadow: 0 5px #666; transform: translateY(4px);}
+		.userInput:active {background-color: #3e8e41; box-shadow: 0 5px #666; transform: translateY(4px);}
+      </style>
+    </span>
 
-  </div>
+<br></br>
+<br></br>
+<br></br>
 
   <div class="container" style="">
+    <div  style="background-image: url('https://images.unsplash.com/photo-1565130838609-c3a86655db61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'); border-color: saddlebrown; background-repeat: no-repeat; color:white; font-weight: bold; text-align: center; background-position: center !important; text-shadow: 4px 2px 4px grey; font-family: monospace; font-size: 20px; border-color: maroon; border-style: double;" class="card">
 
-    <div  style="background-image: url('https://images.unsplash.com/photo-1565130838609-c3a86655db61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'); border-color: saddlebrown; background-repeat: no-repeat; color:white; font-weight: bold; text-align: center; background-position: center; text-shadow: 4px 2px 4px grey; font-family: monospace; font-size: 20px;" class="card">
+<style type="text/css">
+	div, div::before, div::after {position: center !important; box-sizing:border-box;}
+
+div {--height: 40vmin; --bellow-width: 50vmin; --note-color1: maroon; --note-color2: orange; --note-color3: saddlebrown; --note-x1: -10vmin; --note-x2: -16vmin; --note-x3: -8vmin; --notes-full-1: var(--note-x1) 5vmin 0vmin var(--note-color1), var(--note-x2) 25vmin 0vmin var(--note-color2), var(--note-x3) 37.5vmin 0vmin var(--note-color3); --notes-full-2: -8vmin 5vmin 0vmin maroon, -10vmin 25vmin 0vmin orange, -14vmin 37.5vmin 0vmin saddlebrown; --notes-full-3: -12vmin 5vmin 0vmin maroon, -8vmin 25vmin 0vmin orange, -16vmin 37.5vmin 0vmin saddlebrown; --notes-full-4: -16vmin 5vmin 0vmin maroon, -13vmin 25vmin 0vmin orange, -9vmin 37.5vmin 0vmin saddlebrown;}
+
+div {width: var(--bellow-width); height: calc(var(--height) + 5vmin);color: maroon; font-size: 4vmin; text-shadow: var(--notes-full-1); will-change: text-shadow; animation: note-float 2000ms infinite alternate ease-in-out;}
+
+@keyframes note-float {
+  30% {
+    text-shadow: var(--notes-full-2);
+  }
+  60% {
+    text-shadow: var(--notes-full-3);
+  }
+  100% {
+    text-shadow: var(--notes-full-4);
+  }
+}
+</style>
 
       <h2 class="name" id="cityName"></h2>
       	<p class="temperature"></p>
@@ -37,7 +64,6 @@
     </div>
 
   </div>
- <canvas id="canvas"></canvas>
 
 
 

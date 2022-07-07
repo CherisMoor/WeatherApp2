@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/CherisMoor/WeatherApp2#readme",
   "dependencies": {
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "moment-timezone": "^0.5.28",
     "pkg.json": "^2.0.7",
     "require": "^2.4.20",
